@@ -4,7 +4,7 @@ import React from 'react';
 const index = () => {
   return (
     <View>
-      <Text>Start Designing Here change by me for sanjeev yes i will do</Text>
+      <Text>Start Designing Here change by me for sanjeev yes hello all</Text>
     </View>
   );
 };

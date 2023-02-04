@@ -4,7 +4,7 @@ import React from 'react'
 const AppIntro = () => {
   return (
     <View>
-      <Text>AppIntro Start Work  </Text>
+      <Text>AppIntro Start Work demo </Text>
     </View>
   )
 }

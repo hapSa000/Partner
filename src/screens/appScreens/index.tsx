@@ -1,4 +1,1 @@
-export {default as Login} from './login';
-export {default as ForgotPassword} from './forgotPassword';
-export {default as ResetPassword} from './resetPassword';
-export {default as SignUp} from './singup';
+export {default as index} from '../appScreens/home/index';

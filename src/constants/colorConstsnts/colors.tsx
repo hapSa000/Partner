@@ -7,6 +7,7 @@ const colors = {
   White: 'rgb(255, 255, 255)',
   Pink: 'rgb(244, 7, 251)',
   Brown: 'rgb(251, 173, 7)',
+  grey: '#808080',
 };
 
 export default colors;

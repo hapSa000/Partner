@@ -93,8 +93,10 @@ export const textConstants = {
     resendCode: 'Resend code in',
   },
   resetPassword: {
-    resetPassword: 'Re-set Password',
-    subHeading: 'Set your new Password to login',
+    resetPassword: 'Reset Password',
+    heading: 'forgot your password?',
+    subHeading1: 'enter your email address to',
+    subHeading2: 'retrieve your password',
   },
   locationService: {
     locationService: 'Location Service',
@@ -138,7 +140,7 @@ export const textConstants = {
     aboutDrBlal: 'About Dr. B Lal Lab',
     logout: 'Logout',
   },
-  
+
   homeBottomMap: {
     trackBooking: 'Track Booking',
   },

@@ -2,7 +2,10 @@ import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 import style from './style';
 import {textConstants} from '../../../constants/textConstants/textConstants';
-
+import InputField from '../../../component/InputField';
+import Icon from 'react-native-vector-icons/Ionicons';
+import colors from '../../../constants/colorConstsnts/colors';
+import {CurveButton} from '../../../component/CurveButton';
 const index = () => {
   return (
     <View style={style.container}>
@@ -38,24 +41,30 @@ const index = () => {
       </View>
       <View style={style.ViewTextinput}>
         <View style={style.iconView}>
-          <Image
+          {/* <Image
             source={{
               uri: 'https://png.pngtree.com/png-vector/20190216/ourmid/pngtree-vector-message-icon-png-image_541792.jpg',
             }}
             style={style.emailIcon}
-          />
+          /> */}
+          <Icon name="mail" size={25} color={colors.Black} />
         </View>
 
         <TextInput
           placeholder={textConstants.formPlaceHolder.emailAddress}
           style={style.textInput}
         />
+        {/* <InputField style={{width: '80%'}} /> */}
       </View>
-      <TouchableOpacity style={style.buttonView}>
+      {/* <TouchableOpacity style={style.buttonView}>
         <Text style={style.buttonText}>
           {textConstants.resetPassword.resetPassword}
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
+      <CurveButton
+        title={textConstants.resetPassword.resetPassword}
+        style={{width: '80%', marginTop: 50}}
+      />
     </View>
   );
 };

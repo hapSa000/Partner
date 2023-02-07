@@ -7,6 +7,7 @@ export default styles = StyleSheet.create({
     backgroundColor: colors.White,
     alignItems: 'center',
     padding: 20,
+    justifyContent: 'center',
   },
   ViewTextinput: {
     borderColor: colors.grey,

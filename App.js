@@ -6,7 +6,7 @@ import {ForgotPassword, TermsAndCondition} from './src/screens/authScreens';
 import Step1 from './src/screens/ProfileSetup/Step1';
 
 const App = () => {
-  return <TermsAndCondition />;
+  return <ForgotPassword />;
 };
 
 export default App;

@@ -73,6 +73,9 @@ export const textConstants = {
     accountRecovery: 'Account Recovery',
     accountRecoveryDesc: `Changed your phone number, \nor lost access to your facebook \n Account? We can help you login \n with your email.`,
     loginWithEmail: ' LOGIN WITH EMAIL',
+    privicyButton: 'I AGREE',
+    privicyTitle: 'Welcome to Partner.',
+    privicyDesc: 'Please follow these House Rules.',
   },
   mobileNumber: {
     back: 'Back',

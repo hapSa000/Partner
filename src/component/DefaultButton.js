@@ -11,7 +11,7 @@ const DefaultButton = (props) => {
     const {title} = props
   return (
     
-    <TouchableOpacity style={style.container}>
+    <TouchableOpacity style={style.container} >
       <LinearGradient
         colors={[ colors.Pink,colors.Orange,]}
         start={{x: 0, y: 0}}

@@ -9,4 +9,4 @@ const AppIntro = () => {
   )
 }
 
-export default AppIntro
+export default AppIntro;

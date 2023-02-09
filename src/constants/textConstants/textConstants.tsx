@@ -98,8 +98,7 @@ export const textConstants = {
   resetPassword: {
     resetPassword: 'RESET PASSWORD',
     heading: 'Forgot your password?',
-    subHeading1: 'Enter your email address to',
-    subHeading2: 'retrieve your password',
+    subHeading1: 'Enter your email address to \n retrieve your password',
   },
   locationService: {
     locationService: 'Location Service',

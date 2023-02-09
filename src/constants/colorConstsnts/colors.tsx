@@ -9,8 +9,9 @@ const colors = {
   Pink: '#e84393',
   Orange: '#F55050',
   Brown: 'rgb(251, 173, 7)',
-  grey: '#808080',
+  grey: '#57606f',
   lightGrey: '#808070',
+  TwinkleBlue: '#d1d8e0',
 };
 
 export default colors;

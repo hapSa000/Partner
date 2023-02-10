@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {View} from 'react-native';
-import colors from '../../constants/colorConstsnts/colors';
+// import colors from '../../constants/colorConstants/colors';
 import {TextInput} from 'react-native-paper';
 import {ErrorText} from '../CommonText';
 import styles from './styles';
@@ -34,7 +34,7 @@ export default props => {
             placeholder: 'white',
             text: 'white',
             underlineColorAndroid: 'transparent',
-            primary: colors.Pink,
+            // primary: colors.Pink,
             underlineColor: 'transparent',
           },
         }}
@@ -44,7 +44,7 @@ export default props => {
         placeholder={placeholder}
         ref={refField}
         type={'flat'}
-        placeholderTextColor={colors.Black}
+        // placeholderTextColor={colors.Black}
         onBlur={blur}
         onFocus={focus}
         autoCapitalize={'none'}

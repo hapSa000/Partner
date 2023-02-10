@@ -5,7 +5,8 @@ const colors = {
   Blue: 'rgb(7, 21, 251 )',
   Orange: 'rgb(253, 106, 75)',
   White: 'rgb(255, 255, 255)',
-  Pink: 'rgb(244, 7, 251)',
+  Pink: '#3EF1F4',
+  primary: '#3EF1F4',
   Brown: 'rgb(251, 173, 7)',
   grey: '#808080',
 };

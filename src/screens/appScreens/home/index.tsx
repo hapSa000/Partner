@@ -7,8 +7,12 @@ import {MainContainer} from '../../../component/MainContainer';
 import {heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import { BoldText } from '../../../component/CommonText';
 
+<<<<<<< HEAD
 
 const index = () => {
+=======
+const Home = () => {
+>>>>>>> ca9eea186ee400e12ce24a839a31f28531496faf
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 0.1}}>
@@ -34,8 +38,12 @@ const index = () => {
     </View>
   );
 };
+<<<<<<< HEAD
 
 export default index;
+=======
+export default Home;
+>>>>>>> ca9eea186ee400e12ce24a839a31f28531496faf
 
 const styles = StyleSheet.create({
   // container: {

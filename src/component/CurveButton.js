@@ -29,7 +29,7 @@ export const CurveButton = props => {
       {props.loading ? <ActivityIndicator size="small" color={'#FFF'} /> : null}
       {!props.loading && (
         <BoldText
-          style={{color: 'white', fontSize: hp('2%')}}
+          style={{color: 'white', fontSize: hp('2%'),letterSpacing: 0.5,}}
           title={props.title}
         />
       )}

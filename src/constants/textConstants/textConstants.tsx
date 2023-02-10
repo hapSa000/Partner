@@ -70,6 +70,12 @@ export const textConstants = {
     termsCondition: 'Terms & Conditions',
     and: ' and ',
     privacyPolicy: 'Privacy Policy',
+    accountRecovery: 'Account Recovery',
+    accountRecoveryDesc: `Changed your phone number, \nor lost access to your facebook \n Account? We can help you login \n with your email.`,
+    loginWithEmail: ' LOGIN WITH EMAIL',
+    privicyButton: 'I AGREE',
+    privicyTitle: 'Welcome to Partner.',
+    privicyDesc: 'Please follow these House Rules.',
   },
   mobileNumber: {
     back: 'Back',
@@ -93,10 +99,9 @@ export const textConstants = {
     resendCode: 'Resend code in',
   },
   resetPassword: {
-    resetPassword: 'Reset Password',
-    heading: 'forgot your password?',
-    subHeading1: 'enter your email address to',
-    subHeading2: 'retrieve your password',
+    resetPassword: 'RESET PASSWORD',
+    heading: 'Forgot your password?',
+    subHeading1: 'Enter your email address to \n retrieve your password',
   },
   locationService: {
     locationService: 'Location Service',

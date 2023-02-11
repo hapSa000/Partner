@@ -1,12 +1,12 @@
-import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import React from 'react';
 import style from './style';
-import {textConstants} from '../../../constants/textConstants/textConstants';
+import { textConstants } from '../../../constants/textConstants/textConstants';
 import InputField from '../../../component/InputField';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../../../constants/colorConstsnts/colors';
 import DefaultButton from '../../../component/DefaultButton';
-const ForgotPassword = () => {
+const ForgotPassword = ({ navigation }: any) => {
   return (
     <View style={style.container}>
       <View style={style.imageView}>
@@ -29,11 +29,11 @@ const ForgotPassword = () => {
           resizeMode={'contain'}
         />
       </View>
-      <View style={style.forgotPasswordView}>
+      <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("LoginWithNumber")} style={style.forgotPasswordView}>
         <Text style={style.forgotText}>
           {textConstants.resetPassword.heading}
         </Text>
-      </View>
+      </TouchableOpacity>
       <View style={style.description}>
         <Text style={style.descText}>
           {textConstants.resetPassword.subHeading1}
@@ -63,4 +63,3 @@ const ForgotPassword = () => {
   );
 };
 export default ForgotPassword;
- 

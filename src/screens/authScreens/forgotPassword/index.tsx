@@ -1,18 +1,12 @@
 import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
-<<<<<<< HEAD
-
-const ForgotPassword = () => {
-=======
 import style from './style';
 import {textConstants} from '../../../constants/textConstants/textConstants';
 import InputField from '../../../component/InputField';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../../../constants/colorConstsnts/colors';
-import {CurveButton} from '../../../component/CurveButton';
 import DefaultButton from '../../../component/DefaultButton';
-const index = () => {
->>>>>>> 244c207716b5485f64315871be2bd861d57309e7
+const ForgotPassword = () => {
   return (
     <View style={style.container}>
       <View style={style.imageView}>

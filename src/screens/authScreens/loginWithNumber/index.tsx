@@ -5,7 +5,7 @@ import {textConstants} from '../../../constants/textConstants/textConstants';
 import DefaultButton from '../../../component/DefaultButton';
 import DefaultHeader from '../../../component/DefaultHeader';
 import {RegularText} from '../../../component/CommonText';
-const index = () => {
+const LoginWithNumber = () => {
   return (
     <View style={style.container}>
       <DefaultHeader />
@@ -28,4 +28,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LoginWithNumber;

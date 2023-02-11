@@ -4,6 +4,8 @@ import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import images from '../../../constants/imageConstants/images';
 import { screenHeigth } from '../../../constants/dimensions/dimensions';
+import { BoldText, RegularText } from '../../../component/CommonText';
+import { textConstants } from '../../../constants/textConstants/textConstants';
 
 const Login = ({ navigation }: any) => {
   return (
@@ -16,7 +18,8 @@ const Login = ({ navigation }: any) => {
         <Text style={styles.tinderText}>tinder</Text>
       </View>
       <View style={styles.mainView}>
-        <Text style={styles.byClickText}>By clicking Log in, you agree with our </Text>
+        <RegularText style={styles.byClickText} title={textConstants.login.heading} />
+      
         <Text style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: "white", }]}>Terms</Text>
         <Text style={styles.byClickText}>.Learn</Text>
       </View>

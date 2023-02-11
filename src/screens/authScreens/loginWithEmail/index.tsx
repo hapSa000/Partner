@@ -8,7 +8,7 @@ import { RegularText } from '../../../component/CommonText';
 const LoginWithEmail = ({ navigation }: any) => {
   return (
     <View style={style.container}>
-      <DefaultHeader />
+      <DefaultHeader onBackPress={()=>navigation.goBack()} />
       <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("TermAndCondition")} style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}

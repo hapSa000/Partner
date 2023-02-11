@@ -42,7 +42,7 @@ const dummyArray = [
 const TermAndCondition = () => {
   return (
     <View style={style.container}>
-      <DefaultHeader />
+          <DefaultHeader onBackPress={()=>navigation.goBack()} />
       <View style={style.imageView}>
         <Image
           // source={{

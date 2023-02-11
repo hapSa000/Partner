@@ -4,17 +4,14 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "white",
-        alignItems: 'center',
-        marginTop: screenHeigth * 0.250
-
     },
     img: {
         height: screenHeigth * 0.452,
         width: screenWidth * 0.452
     },
     imgView: {
-        alignItems: "center",
-        justifyContent: "center"
+        alignItems: 'center',
+        marginTop: screenHeigth * 0.250
     },
 
 });

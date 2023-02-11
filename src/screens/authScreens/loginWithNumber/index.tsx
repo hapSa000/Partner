@@ -5,16 +5,16 @@ import {textConstants} from '../../../constants/textConstants/textConstants';
 import DefaultButton from '../../../component/DefaultButton';
 import DefaultHeader from '../../../component/DefaultHeader';
 import {RegularText} from '../../../component/CommonText';
-const index = () => {
+const LoginWithNumber = ({navigation}:any) => {
   return (
     <View style={style.container}>
       <DefaultHeader />
-      <View style={style.forgotPasswordView}>
+      <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("LoginWithEmail")} style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}
           title={textConstants.login.accountRecovery}
         />
-      </View>
+      </TouchableOpacity>
       <View style={style.description}>
         <RegularText
           style={style.descText}
@@ -28,4 +28,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LoginWithNumber;

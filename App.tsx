@@ -1,16 +1,15 @@
-import {View, Text} from 'react-native';
-import React from 'react';
-import AppIntro from './src/screens/appIntroScreen/AppIntro';
-import {Login} from './src/screens/authScreens';
-import Splash from './src/screens/appIntroScreen/splash';
+import { View, Text } from 'react-native'
+import React, { useEffect } from 'react'
+import AppNavigator from './src/navigation/AppNavigation'
 
 const App = () => {
+ 
   return (
-    <View style={{flex: 1}}>
-      <Splash />
-      {/* <Login/> */}
+    <View style={{ flex: 1 }}>
+      <AppNavigator />
     </View>
-  );
+  )
+
 };
 
 export default App;

@@ -1,15 +1,29 @@
 import { View, Text, Image } from 'react-native';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './style';
 import images from '../../../constants/imageConstants/images';
-const Splash = () => {
+const Splash = ({ navigation }: any) => {
+    
+    useEffect(() => {
+        setTimeout(() => {
+            navigation.reset({
+                index: 0,
+                routes: [
+                    { name: 'Login' }
+                ]
+            });
+        }, 2000);
+    }, [])
+
     return (
         <View style={styles.container}>
-            <Image
-                source={images.tinder}
-                resizeMode="contain"
-                style={styles.img}
-            />
+            <View style={styles.imgView}>
+                <Image
+                    source={images.tinder}
+                    resizeMode="contain"
+                    style={styles.img}
+                />
+            </View>
         </View>
     );
 };

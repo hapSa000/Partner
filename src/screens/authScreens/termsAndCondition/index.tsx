@@ -38,7 +38,8 @@ const dummyArray = [
   },
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
-const index = () => {
+
+const TermAndCondition = () => {
   return (
     <View style={style.container}>
       <DefaultHeader />
@@ -89,7 +90,7 @@ const index = () => {
 
                   {item.link?.name ? (
                     <Text
-                      onPress={() => alert('open online linking')}
+                      onPress={() => Alert('open online linking')}
                       style={{
                         color: colors.Pink,
                         textDecorationLine: 'underline',
@@ -111,4 +112,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default TermAndCondition;

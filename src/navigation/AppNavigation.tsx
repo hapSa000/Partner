@@ -2,11 +2,8 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Splash } from '../screens/appIntroScreen';
-import { Login } from '../screens/authScreens';
-import { ForgotPassword } from '../screens/authScreens';
-import { LoginWithEmail } from '../screens/authScreens';
-import { LoginWithNumber } from '../screens/authScreens';
-import { TermAndCondition } from '../screens/authScreens';
+import { Login , ForgotPassword , TermAndCondition , LoginWithEmail,LoginWithNumber  } from '../screens/authScreens';
+
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {

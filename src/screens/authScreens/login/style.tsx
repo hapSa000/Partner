@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { screenHeigth } from '../../../constants/dimensions/dimensions';
-import Typography from '../../../constants/fontContants/font';
+import Typography from '../../../constants/fontConstants/fonts';
 const styles = StyleSheet.create({
     container: {
         flex: 1,

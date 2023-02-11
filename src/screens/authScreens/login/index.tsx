@@ -1,12 +1,11 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import images from '../../../constants/imageConstants/images';
-import Typography from '../../../constants/fontContants/font';
 import { screenHeigth } from '../../../constants/dimensions/dimensions';
 
-const Login = () => {
+const Login = ({ navigation }: any) => {
   return (
     <LinearGradient colors={["#e66465", "#9198e5"]} style={styles.container}>
       <View style={styles.mainView}>
@@ -66,9 +65,9 @@ const Login = () => {
           <Text style={styles.socialText}>LOG IN WITH PHONE NUMBER</Text>
         </View>
       </View>
-      <View style={styles.troubleView}>
+      <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("ForgotPassword")} style={styles.troubleView}>
         <Text style={[styles.socialText, { color: "white" }]}>Trouble logging in ? </Text>
-      </View>
+      </TouchableOpacity>
     </LinearGradient>
   );
 };

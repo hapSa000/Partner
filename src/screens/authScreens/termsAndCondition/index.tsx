@@ -39,10 +39,11 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const TermAndCondition = () => {
+const TermAndCondition = props => {
+  const {navigation} = props;
   return (
     <View style={style.container}>
-          <DefaultHeader onBackPress={()=>navigation.goBack()} />
+      <DefaultHeader onBackPress={() => navigation.goBack()} />
       <View style={style.imageView}>
         <Image
           // source={{
@@ -90,7 +91,7 @@ const TermAndCondition = () => {
 
                   {item.link?.name ? (
                     <Text
-                      onPress={() => Alert('open online linking')}
+                      onPress={() => navigation.navigate('WebOpen')}
                       style={{
                         color: colors.Pink,
                         textDecorationLine: 'underline',
@@ -105,7 +106,10 @@ const TermAndCondition = () => {
           }}
         />
         <View style={style.buttonViewText}>
-          <DefaultButton title={textConstants.login.privicyButton} />
+          <DefaultButton
+            title={textConstants.login.privicyButton}
+            onPress={() => alert('hello')}
+          />
         </View>
       </View>
     </View>

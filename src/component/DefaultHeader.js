@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../constants/colorConstsnts/colors';
 import { StyleSheet } from 'react-native';
 
-const DefaultHeader = () => {
+const DefaultHeader = (props) => {
   return (
     <View style={style.container}>
       <View style={style.headerView}>

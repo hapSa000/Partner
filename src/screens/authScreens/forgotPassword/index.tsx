@@ -6,6 +6,7 @@ import InputField from '../../../component/InputField';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../../../constants/colorConstsnts/colors';
 import DefaultButton from '../../../component/DefaultButton';
+import DefaultHeader from '../../../component/DefaultHeader';
 const ForgotPassword = ({ navigation }: any) => {
   return (
     <View style={style.container}>
@@ -30,13 +31,13 @@ const ForgotPassword = ({ navigation }: any) => {
         />
       </View>
       <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("LoginWithNumber")} style={style.forgotPasswordView}>
-        <Text style={style.forgotText}>
-          {textConstants.resetPassword.heading}
+        <Text style={style.forgotText}>fdgdfg
+          {/* {textConstants.resetPassword.heading} */}
         </Text>
       </TouchableOpacity>
       <View style={style.description}>
-        <Text style={style.descText}>
-          {textConstants.resetPassword.subHeading1}
+        <Text style={style.descText}>fdgfg
+          {/* {textConstants.resetPassword.subHeading1} */}
         </Text>
       </View>
       <View style={style.ViewTextinput}>
@@ -51,13 +52,17 @@ const ForgotPassword = ({ navigation }: any) => {
         </View>
 
         <TextInput
-          placeholder={textConstants.formPlaceHolder.emailAddress}
+          placeholder={"dfddg"}
+          // placeholder={textConstants.formPlaceHolder.emailAddress}
           style={style.textInput}
         />
         {/* <InputField style={{width: '80%'}} /> */}
       </View>
       <View style={style.buttonViewText}>
-        <DefaultButton title={textConstants.resetPassword.resetPassword} />
+        <DefaultButton
+          title={"fgdfg"}
+        // title={textConstants.resetPassword.resetPassword} 
+        />
       </View>
     </View>
   );

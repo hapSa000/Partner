@@ -19,17 +19,17 @@ export default function Step1(props) {
 
     <View style={{flexGrow: 1}}>
       <ProgressSteps
-        activeStepIconBorderColor={colors.Pink}
-        activeLabelColor={colors.Pink}
-        completedStepIconColor={colors.Pink}
+        activeStepIconBorderColor={colors.Primary}
+        activeLabelColor={colors.Primary}
+        completedStepIconColor={colors.Primary}
         labelColor={colors.grey}
-        completedLabelColor={colors.Pink}
-        completedProgressBarColor={colors.Pink}
-        progressBarColor={colors.Pink}>
+        completedLabelColor={colors.Primary}
+        completedProgressBarColor={colors.Primary}
+        progressBarColor={colors.Primary}>
         <ProgressStep
           label="First Step"
-          progressBarColor={colors.Pink}
-          activeStepIconBorderColor={colors.Pink}
+          progressBarColor={colors.Primary}
+          activeStepIconBorderColor={colors.Primary}
           nextBtnTextStyle={buttonTextStyle}
           previousBtnTextStyle={buttonTextStyle}>
           <View style={{alignItems: 'center'}}>

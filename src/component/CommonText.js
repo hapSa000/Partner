@@ -1,11 +1,12 @@
 import React from 'react';
-import {Alert, StyleSheet, Text} from 'react-native';
+import { Alert, StyleSheet, Text } from 'react-native';
 
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import colors from '../constants/colorConstsnts/colors';
+import Typography from '../constants/fontConstants/fonts';
 
 export const BoldText = props => {
   return (
@@ -96,8 +97,7 @@ export const ShowToast = (status, message) => {
 const Style = StyleSheet.create({
   BoldText: {
     fontSize: hp('2.5%'),
-
-    fontWeight: '700',
+    fontFamily: Typography.latoBold,
     color: 'black',
   },
   toast: {
@@ -127,14 +127,14 @@ const Style = StyleSheet.create({
 
   RegularText: {
     fontSize: hp('2%'),
-
-    fontFamily: 'OpenSans-Regular',
+    fontFamily: Typography.LatoRegular,
     color: colors.Black,
   },
 
   ItalicText: {
     color: 'rgb(79,288,78)',
     fontSize: hp('1.7%'),
+    fontFamily: Typography.LatoItalic
     // marginBottom:10
   },
   ErrorText: {

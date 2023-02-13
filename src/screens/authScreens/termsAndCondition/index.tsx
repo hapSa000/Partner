@@ -39,7 +39,7 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const TermAndCondition = () => {
+const TermAndCondition = ({navigation}:any) => {
   return (
     <View style={style.container}>
           <DefaultHeader onBackPress={()=>navigation.goBack()} />
@@ -55,7 +55,8 @@ const TermAndCondition = () => {
         <View style={style.forgotPasswordView}>
           <BoldText
             style={style.forgotText}
-            title={textConstants.login.privicyTitle}
+            title={"gdfgdf"}
+            // title={textConstants.login.privicyTitle}
           />
         </View>
         <View style={style.forgotPasswordView}>
@@ -74,7 +75,7 @@ const TermAndCondition = () => {
             return (
               <View style={{paddingHorizontal: 50, paddingVertical: 10}}>
                 <View style={{flexDirection: 'row', padding: 0}}>
-                  <Icon name="checkmark-sharp" size={30} color={colors.Pink} />
+                  <Icon name="checkmark-sharp" size={30} color={colors.Primary} />
                   <RegularText
                     style={{
                       marginLeft: 15,
@@ -92,7 +93,7 @@ const TermAndCondition = () => {
                     <Text
                       onPress={() => Alert('open online linking')}
                       style={{
-                        color: colors.Pink,
+                        color: colors.Primary,
                         textDecorationLine: 'underline',
                         textDecorationColor: 'white',
                       }}>
@@ -105,7 +106,10 @@ const TermAndCondition = () => {
           }}
         />
         <View style={style.buttonViewText}>
-          <DefaultButton title={textConstants.login.privicyButton} />
+          <DefaultButton 
+          title={"fdgdfgd"}
+          // title={textConstants.login.privicyButton}
+           />
         </View>
       </View>
     </View>

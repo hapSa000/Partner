@@ -17,7 +17,7 @@ export const CurveButton = props => {
         {
           flexDirection: 'row',
           borderRadius: 30,
-          backgroundColor: colors.primary,
+          backgroundColor: colors.Celeste,
           justifyContent: 'center',
           alignItems: 'center',
           paddingVertical: hp('2%'),

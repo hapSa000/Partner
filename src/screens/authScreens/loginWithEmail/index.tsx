@@ -12,17 +12,22 @@ const LoginWithEmail = ({ navigation }: any) => {
       <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("TermAndCondition")} style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}
-          title={textConstants.login.accountRecovery}
+          title={"gfdgd"}
+          // title={textConstants.login.accountRecovery}
         />
       </TouchableOpacity>
       <View style={style.description}>
         <RegularText
           style={style.descText}
-          title={textConstants.login.accountRecoveryDesc}
+          title={"dfgdfg"}
+          // title={textConstants.login.accountRecoveryDesc}
         />
       </View>
       <View style={style.buttonViewText}>
-        <DefaultButton title={textConstants.login.loginWithEmail} />
+        <DefaultButton 
+        title={"fdgdgdf"}
+        // title={textConstants.login.loginWithEmail}
+         />
       </View>
     </View>
   );

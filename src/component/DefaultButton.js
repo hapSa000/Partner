@@ -13,7 +13,7 @@ const DefaultButton = (props) => {
     
     <TouchableOpacity style={style.container} >
       <LinearGradient
-        colors={[ colors.Pink,colors.Orange,]}
+        colors={[ colors.Primary,colors.Secondary,]}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
         style={style.buttonView}>

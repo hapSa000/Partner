@@ -24,32 +24,42 @@ export const textConstants = {
     signIn: 'Sign in',
     submit: 'Submit',
     done: 'Done',
-    
+
     cancel: 'Cancel',
     back: 'Back',
     accept: 'Accept',
     makePayment: 'Make Payment',
     proceedToBuy: 'Proceed to Buy',
-   
-    
+
+
   },
   login: {
-  heading:'By clicking Log in, you agree with our',
-   
-    privicyDesc: 'Please follow these House Rules.',
+    heading: 'By clicking Log in, you agree with our',
+    headingTwo: "how we process yout data in our ",
+    PrivacyPolicy: "Privacy Policy",
+    text: "tinder",
+    terms: "Terms",
+    learn: " .Learn",
+    and: " and",
+    cookies: "Cookies Policy",
+    dot: ".",
+    google: "LOG IN WITH GOOGLE",
+    facebook: "LOG IN WITH FACEBOOK",
+    phoneNum: "LOG IN WITH PHONE NUMBER",
+    truble: "Trouble logging in ?"
   },
   mobileNumber: {
     back: 'Back',
-   
+
   },
   signUp: {
     registration: 'Registration',
-   
+
     gender: 'Gender',
     male: 'Male',
     female: 'Female',
     iAccept: 'I Accept',
   },
-  
-  
+
+
 };

@@ -18,7 +18,7 @@ export default StyleSheet.create({
     color: colors.black,
     borderWidth: 0,
     borderBottomWidth: 0,
-    borderColor: colors.Pink,
+    borderColor: colors.Primary,
     paddingHorizontal: hp('2%'),
     underlineColorAndroid: 'transparent',
     borderBottomLeftRadius: 25,

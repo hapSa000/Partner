@@ -7,7 +7,7 @@ import colors from '../../constants/colorConstsnts/colors';
 
 const style = StyleSheet.create({
   container: {
-    backgroundColor: colors.Pink,
+    backgroundColor: colors.Primary,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',

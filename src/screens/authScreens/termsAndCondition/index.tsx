@@ -16,6 +16,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {BoldText, RegularText} from '../../../component/CommonText';
 import colors from '../../../constants/colorConstsnts/colors';
 import Typography from '../../../constants/fontConstants/fonts';
+import images from '../../../constants/imageConstants/images';
 const dummyArray = [
   {
     id: '1',
@@ -42,13 +43,13 @@ const dummyArray = [
 const TermAndCondition = ({navigation}:any) => {
   return (
     <View style={style.container}>
-          <DefaultHeader onBackPress={()=>navigation.goBack()} />
+      <DefaultHeader onBackPress={() => navigation.goBack()} />
       <View style={style.imageView}>
         <Image
           // source={{
           //   uri: 'https://img.favpng.com/6/17/5/vector-graphics-cartoon-drawing-image-clip-art-png-favpng-ssS12XjzLhR2bXERFCjRCLryR.jpg',
           // }}
-          source={require('../../../assets/images/MyProfile/man.png')}
+          source={images.tinder}
           style={style.imagestyle}
           resizeMode={'contain'}
         />
@@ -62,8 +63,8 @@ const TermAndCondition = ({navigation}:any) => {
         <View style={style.forgotPasswordView}>
           <RegularText
             style={style.forgotText1}
-            title={textConstants.login.privicyDesc}
-            // title={'Please follow these House Rules.'}
+            // title={textConstants.login.privicyDesc}
+            title={'Please follow these House Rules.'}
           />
         </View>
       </View>
@@ -91,7 +92,7 @@ const TermAndCondition = ({navigation}:any) => {
 
                   {item.link?.name ? (
                     <Text
-                      onPress={() => Alert('open online linking')}
+                      onPress={() => navigation.navigate('WebOpen')}
                       style={{
                         color: colors.Primary,
                         textDecorationLine: 'underline',
@@ -106,10 +107,11 @@ const TermAndCondition = ({navigation}:any) => {
           }}
         />
         <View style={style.buttonViewText}>
-          <DefaultButton 
-          title={"fdgdfgd"}
-          // title={textConstants.login.privicyButton}
-           />
+          <DefaultButton
+            title={"dfbdf"}
+            // title={textConstants.login.privicyButton}
+            onPress={() => alert('hello')}
+          />
         </View>
       </View>
     </View>

@@ -5,11 +5,14 @@ import {textConstants} from '../../../constants/textConstants/textConstants';
 import DefaultButton from '../../../component/DefaultButton';
 import DefaultHeader from '../../../component/DefaultHeader';
 import {RegularText} from '../../../component/CommonText';
-const LoginWithNumber = ({navigation}:any) => {
+const LoginWithNumber = ({navigation}: any) => {
   return (
     <View style={style.container}>
-     <DefaultHeader onBackPress={()=>navigation.goBack()} />
-      <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("LoginWithEmail")} style={style.forgotPasswordView}>
+      <DefaultHeader onBackPress={() => navigation.goBack()} />
+      <TouchableOpacity
+        activeOpacity={0.6}
+        onPress={() => navigation.navigate('LoginWithEmail')}
+        style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}
           title={"fgd"}

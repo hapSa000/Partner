@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../../constants/colorConstsnts/colors';
+import Typography from '../../../constants/fontConstants/fonts';
 
 export default styles = StyleSheet.create({
   container: {
@@ -46,7 +47,7 @@ export default styles = StyleSheet.create({
     marginTop: 10,
   },
   forgotText: {
-    fontWeight: 'bold',
+    // fontFamily: Typography.latoBold,
     color: colors.grey,
     fontSize: 33,
     // letterSpacing: 0.7,
@@ -54,7 +55,7 @@ export default styles = StyleSheet.create({
   forgotText1: {
     color: colors.lightGrey,
     fontSize: 18,
-    fontWeight: '500',
+    fontFamily: Typography.latoBold,
   },
   description: {
     justifyContent: 'center',

@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../../constants/colorConstsnts/colors';
+import Typography from '../../../constants/fontConstants/fonts';
 
 const styles = StyleSheet.create({
   container: {
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   forgotText: {
-    fontWeight: 'bold',
+    fontFamily: Typography.latoBold,
     color: 'black',
     fontSize: 25,
   },
@@ -59,6 +60,7 @@ const styles = StyleSheet.create({
     color: colors.grey,
     fontSize: 20,
     textAlign: 'center',
+    fontFamily: Typography.latoBold,
   },
   emailIcon: {
     width: 20,
@@ -78,6 +80,9 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 0.5,
   },
-  buttonViewText: {width: '100%', marginTop: 50},
+  buttonViewText: {
+    width: '100%',
+    marginTop: 50,
+  },
 });
 export default styles

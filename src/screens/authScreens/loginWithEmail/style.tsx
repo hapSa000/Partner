@@ -86,5 +86,8 @@ export default styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
   },
-  buttonViewText: {width: '100%', marginTop: 50},
+  buttonViewText: {
+    width: '100%',
+    marginTop: 50,
+  },
 });

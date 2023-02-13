@@ -19,19 +19,19 @@ export const textConstants = {
     selectRelation: 'Select Relation',
     dateOfBirth: 'Date of Birth',
   },
+  formPlaceHolder: {
+    emailAddress: 'Enter Email',
+  },
   btnText: {
     next: 'Next',
     signIn: 'Sign in',
     submit: 'Submit',
     done: 'Done',
-
     cancel: 'Cancel',
     back: 'Back',
     accept: 'Accept',
     makePayment: 'Make Payment',
     proceedToBuy: 'Proceed to Buy',
-
-
   },
   login: {
     heading: 'By clicking Log in, you agree with our',
@@ -50,16 +50,19 @@ export const textConstants = {
   },
   mobileNumber: {
     back: 'Back',
-
   },
   signUp: {
     registration: 'Registration',
-
     gender: 'Gender',
     male: 'Male',
     female: 'Female',
     iAccept: 'I Accept',
   },
-
-
+  resetPassword: {
+    subHeading: 'Set your new Password to login',
+    resetPassword: 'Reset Password',
+    heading: 'Forgot your password?',
+    subHeading1: 'Enter your email address to',
+    subHeading2: 'retrieve your password',
+  },
 };

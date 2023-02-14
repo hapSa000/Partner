@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 import colors from '../../../constants/colorConstsnts/colors';
 import Typography from '../../../constants/fontConstants/fonts';
 
-export default styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.White,
@@ -85,3 +85,4 @@ export default styles = StyleSheet.create({
     marginTop: 50,
   },
 });
+export default styles

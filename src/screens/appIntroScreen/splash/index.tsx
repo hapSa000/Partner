@@ -19,7 +19,7 @@ const Splash = ({ navigation }: any) => {
         <View style={styles.container}>
             <View style={styles.imgView}>
                 <Image
-                    source={images.tinder}
+                    source={images.Logo}
                     resizeMode="contain"
                     style={styles.img}
                 />

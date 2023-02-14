@@ -5,15 +5,9 @@ const colors = {
   Blue: 'rgb(7, 21, 251 )',
   // Orange: 'rgb(253, 106, 75)',
   White: 'rgb(255, 255, 255)',
-
-
-  Pink: '#3EF1F4',
-  primary: '#3EF1F4',
-
- 
-  Pink: '#e84393',
-  Orange: '#F55050',
-
+  Celeste: '#3EF1F4',
+  Secondary: '#e84393',
+  Primary: '#F55050',
   Brown: 'rgb(251, 173, 7)',
   grey: '#57606f',
   lightGrey: '#808070',

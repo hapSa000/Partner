@@ -16,6 +16,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {BoldText, RegularText} from '../../../component/CommonText';
 import colors from '../../../constants/colorConstsnts/colors';
 import Typography from '../../../constants/fontConstants/fonts';
+import images from '../../../constants/imageConstants/images';
 const dummyArray = [
   {
     id: '1',
@@ -39,8 +40,7 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const TermAndCondition = props => {
-  const {navigation} = props;
+const TermAndCondition = ({navigation}: any) => {
   return (
     <View style={style.container}>
       <DefaultHeader onBackPress={() => navigation.goBack()} />
@@ -56,14 +56,15 @@ const TermAndCondition = props => {
         <View style={style.forgotPasswordView}>
           <BoldText
             style={style.forgotText}
-            title={textConstants.login.privicyTitle}
+            title={'gdfgdf'}
+            // title={textConstants.login.privicyTitle}
           />
         </View>
         <View style={style.forgotPasswordView}>
           <RegularText
             style={style.forgotText1}
-            title={textConstants.login.privicyDesc}
-            // title={'Please follow these House Rules.'}
+            // title={textConstants.login.privicyDesc}
+            title={'Please follow these House Rules.'}
           />
         </View>
       </View>
@@ -75,7 +76,11 @@ const TermAndCondition = props => {
             return (
               <View style={{paddingHorizontal: 50, paddingVertical: 10}}>
                 <View style={{flexDirection: 'row', padding: 0}}>
-                  <Icon name="checkmark-sharp" size={30} color={colors.Pink} />
+                  <Icon
+                    name="checkmark-sharp"
+                    size={30}
+                    color={colors.Primary}
+                  />
                   <RegularText
                     style={{
                       marginLeft: 15,
@@ -98,7 +103,7 @@ const TermAndCondition = props => {
                         })
                       }
                       style={{
-                        color: colors.Pink,
+                        color: colors.Primary,
                         textDecorationLine: 'underline',
                         textDecorationColor: 'white',
                       }}>
@@ -112,7 +117,8 @@ const TermAndCondition = props => {
         />
         <View style={style.buttonViewText}>
           <DefaultButton
-            title={textConstants.login.privicyButton}
+            title={'dfbdf'}
+            // title={textConstants.login.privicyButton}
             onPress={() => alert('hello')}
             //             onPress={() => navigation.navigate('AboutUs')}
           />

@@ -18,7 +18,7 @@ const DeskSwipeCard = () => {
       style={{
         height: hp('70%'),
         borderWidth: 2,
-        borderColor: colors.Pink,
+        borderColor: colors.Primary,
         borderRadius: 20,
       }}>
       <View style={style.card}>

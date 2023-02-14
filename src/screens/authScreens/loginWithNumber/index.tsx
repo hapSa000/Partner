@@ -15,17 +15,22 @@ const LoginWithNumber = ({navigation}: any) => {
         style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}
-          title={textConstants.login.accountRecovery}
+          title={"fgd"}
+          // title={textConstants.login.accountRecovery}
         />
       </TouchableOpacity>
       <View style={style.description}>
         <RegularText
           style={style.descText}
-          title={textConstants.login.accountRecoveryDesc}
+          // title={textConstants.login.accountRecoveryDesc}
+          title={"fsdfsd"}
         />
       </View>
       <View style={style.buttonViewText}>
-        <DefaultButton title={textConstants.login.loginWithEmail} />
+        <DefaultButton 
+        // title={textConstants.login.loginWithEmail}
+        title={"gfdg"}
+         />
       </View>
     </View>
   );

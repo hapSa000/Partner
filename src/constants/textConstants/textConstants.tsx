@@ -27,7 +27,6 @@ export const textConstants = {
     signIn: 'Sign in',
     submit: 'Submit',
     done: 'Done',
-
     cancel: 'Cancel',
     back: 'Back',
     accept: 'Accept',
@@ -36,19 +35,24 @@ export const textConstants = {
   },
   login: {
     heading: 'By clicking Log in, you agree with our',
-    privicyDesc: 'Please follow these House Rules.',
-    accountRecovery: 'Account Recovery',
-    accountRecoveryDesc: `Changed your phone number, \nor lost access to your facebook \n Account? We can help you login \n with your email.`,
-    loginWithEmail: ' LOGIN WITH EMAIL',
-    privicyButton: 'I AGREE',
-    privicyTitle: 'Welcome to Partner.',
+    headingTwo: "how we process yout data in our ",
+    PrivacyPolicy: "Privacy Policy",
+    text: "tinder",
+    terms: "Terms",
+    learn: " .Learn",
+    and: " and",
+    cookies: "Cookies Policy",
+    dot: ".",
+    google: "LOG IN WITH GOOGLE",
+    facebook: "LOG IN WITH FACEBOOK",
+    phoneNum: "LOG IN WITH PHONE NUMBER",
+    truble: "Trouble logging in ?"
   },
   mobileNumber: {
     back: 'Back',
   },
   signUp: {
     registration: 'Registration',
-
     gender: 'Gender',
     male: 'Male',
     female: 'Female',

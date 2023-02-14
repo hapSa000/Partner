@@ -1,77 +1,146 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 import React from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import images from '../../../constants/imageConstants/images';
-import { screenHeigth } from '../../../constants/dimensions/dimensions';
+import { screenHeigth, screenWidth } from '../../../constants/dimensions/dimensions';
 import { BoldText, RegularText } from '../../../component/CommonText';
 import { textConstants } from '../../../constants/textConstants/textConstants';
+import colors from '../../../constants/colorConstsnts/colors';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Login = ({ navigation }: any) => {
   return (
-    <LinearGradient colors={["#e66465", "#9198e5"]} style={styles.container}>
-      <View style={styles.mainView}>
-        <Image
-          source={images.tinder}
-          style={styles.tinderImg}
-        />
-        <Text style={styles.tinderText}>tinder</Text>
-      </View>
-      <View style={styles.mainView}>
-        <RegularText style={styles.byClickText} title={textConstants.login.heading} />
-      
-        <Text style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: "white", }]}>Terms</Text>
-        <Text style={styles.byClickText}>.Learn</Text>
-      </View>
-      <View style={styles.PrivacyPolicyMainText}>
-        <Text style={[styles.byClickText, { lineHeight: 20 }]}>how we process yout data in our </Text>
-        <Text style={[styles.byClickText, { lineHeight: 20, borderBottomWidth: 1, borderBottomColor: "white", }]}>Privacy Policy</Text>
-        <Text style={[styles.byClickText, { lineHeight: 20 }]}> and</Text>
-      </View>
-      <View style={styles.PrivacyPolicyMainText}>
-        <Text style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: "white", }]}>Cookies Policy</Text>
-        <Text style={styles.byClickText}>.</Text>
-      </View>
-      <View style={styles.mainSocial}>
-        <View style={styles.iconView}>
+    <LinearGradient colors={[colors.Primary, colors.Secondary]} style={styles.container}>
+      <ScrollView>
+        <View style={styles.mainView}>
           <Image
-            source={images.google}
-            resizeMode="contain"
-            style={styles.icon}
+            source={images.tinder}
+            style={styles.tinderImg}
           />
+          <BoldText style={styles.tinderText} title={textConstants.login.text} />
         </View>
-        <View style={{ marginLeft: 25 }}>
-          <Text style={styles.socialText}>LOG IN WITH GOOGLE</Text>
+        <View style={[styles.mainView, { marginTop: screenHeigth * 0.240 }]}>
+          <RegularText style={styles.byClickText} title={textConstants.login.heading} />
+          <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.terms} />
+          <BoldText style={styles.byClickText} title={textConstants.login.learn} />
         </View>
-      </View>
-      <View style={[styles.mainSocial, { marginTop: screenHeigth * 0.02 }]}>
-        <View style={styles.iconView}>
-          <Image
-            source={images.facebook}
-            resizeMode="contain"
-            style={styles.icon}
-          />
+        <View style={styles.PrivacyPolicyMainText}>
+          <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.02 }]} title={textConstants.login.headingTwo} />
+          <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.025, borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.PrivacyPolicy} />
+          <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.02 }]} title={textConstants.login.and} />
         </View>
-        <View style={{ marginLeft: 20 }}>
-          <Text style={styles.socialText}>LOG IN WITH FACEBOOK</Text>
+        <View style={styles.PrivacyPolicyMainText}>
+          <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.cookies} />
+          <BoldText style={styles.byClickText} title={textConstants.login.dot} />
         </View>
-      </View>
-      <View style={[styles.mainSocial, { marginTop: screenHeigth * 0.02 }]}>
-        <View style={styles.iconView}>
-          <Image
-            source={images.speechBubble}
-            resizeMode="contain"
-            style={styles.icon}
-          />
+        <View style={styles.mainSocial}>
+          <View style={styles.iconView}>
+            <Image
+              source={images.google}
+              resizeMode="contain"
+              style={styles.icon}
+            />
+          </View>
+          <View style={{ marginLeft: screenWidth * 0.075 }}>
+            <BoldText style={styles.socialText} title={textConstants.login.google} />
+          </View>
         </View>
-        <View style={{ marginLeft: 5 }}>
-          <Text style={styles.socialText}>LOG IN WITH PHONE NUMBER</Text>
+        <View style={[styles.mainSocial, { marginTop: screenHeigth * 0.020 }]}>
+          <View style={styles.iconView}>
+            <Image
+              source={images.facebook}
+              resizeMode="contain"
+              style={styles.icon}
+            />
+          </View>
+          <View style={{ marginLeft: screenWidth * 0.055 }}>
+            <BoldText style={styles.socialText} title={textConstants.login.facebook} />
+          </View>
         </View>
-      </View>
-      <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("ForgotPassword")} style={styles.troubleView}>
-        <Text style={[styles.socialText, { color: "white" }]}>Trouble logging in ? </Text>
-      </TouchableOpacity>
+        <View style={[styles.mainSocial, { marginTop: screenHeigth * 0.020 }]}>
+          <View style={styles.iconView}>
+            <Image
+              source={images.speechBubble}
+              resizeMode="contain"
+              style={styles.icon}
+            />
+          </View>
+          <View style={{ marginLeft: screenWidth * 0.02 }}>
+            <BoldText style={styles.socialText} title={textConstants.login.phoneNum} />
+          </View>
+        </View>
+        <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("ForgotPassword")} style={styles.troubleView}>
+          <BoldText style={[styles.socialText, { color: colors.White }]} title={textConstants.login.truble} />
+        </TouchableOpacity>
+      </ScrollView>
     </LinearGradient>
   );
 };
 export default Login;
+
+{/* <LinearGradient colors={[colors.Primary, colors.Secondary]} style={styles.container}>
+<View style={styles.mainView}>
+  <Image
+    source={images.tinder}
+    style={styles.tinderImg}
+  />
+  <BoldText style={styles.tinderText} title={textConstants.login.text} />
+</View>
+<View style={styles.mainView}>
+  <RegularText style={styles.byClickText} title={textConstants.login.heading} />
+  <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.terms} />
+  <BoldText style={styles.byClickText} title={textConstants.login.learn} />
+</View>
+<View style={styles.PrivacyPolicyMainText}>
+  <BoldText style={[styles.byClickText, { lineHeight: hp('3%') }]} title={textConstants.login.headingTwo} />
+  <BoldText style={[styles.byClickText, { lineHeight: hp('2.5%'), borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.PrivacyPolicy} />
+  <BoldText style={[styles.byClickText, { lineHeight: hp('3%') }]} title={textConstants.login.and} />
+</View>
+<View style={styles.PrivacyPolicyMainText}>
+  <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.cookies} />
+  <BoldText style={styles.byClickText} title={textConstants.login.dot} />
+</View>
+<View style={styles.mainSocial}>
+  <View style={styles.iconView}>
+    <Image
+      source={images.google}
+      resizeMode="contain"
+      style={styles.icon}
+    />
+  </View>
+  <View style={{ marginLeft: wp('8%') }}>
+    <BoldText style={styles.socialText} title={textConstants.login.google} />
+  </View>
+</View>
+<View style={[styles.mainSocial, { marginTop: hp('2%') }]}>
+  <View style={styles.iconView}>
+    <Image
+      source={images.facebook}
+      resizeMode="contain"
+      style={styles.icon}
+    />
+  </View>
+  <View style={{ marginLeft: wp("6%") }}>
+    <BoldText style={styles.socialText} title={textConstants.login.facebook} />
+  </View>
+</View>
+<View style={[styles.mainSocial, { marginTop: hp('2%') }]}>
+  <View style={styles.iconView}>
+    <Image
+      source={images.speechBubble}
+      resizeMode="contain"
+      style={styles.icon}
+    />
+  </View>
+  <View style={{ marginLeft: wp('2%') }}>
+    <BoldText style={styles.socialText} title={textConstants.login.phoneNum} />
+  </View>
+</View>
+<TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate("ForgotPassword")} style={styles.troubleView}>
+  <BoldText style={[styles.socialText, { color: colors.White }]} title={textConstants.login.truble} />
+</TouchableOpacity>
+</LinearGradient> */}

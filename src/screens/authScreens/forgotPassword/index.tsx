@@ -6,7 +6,9 @@ import InputField from '../../../component/InputField';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../../../constants/colorConstsnts/colors';
 import DefaultButton from '../../../component/DefaultButton';
-const ForgotPassword = ({navigation}) => {
+import DefaultHeader from '../../../component/DefaultHeader';
+import images from '../../../constants/imageConstants/images';
+const ForgotPassword = ({navigation}: any) => {
   return (
     <View style={style.container}>
       <View style={style.imageView}>
@@ -18,7 +20,7 @@ const ForgotPassword = ({navigation}) => {
       </View>
       {/* <View style={style.imageView}>
         <Image
-          source={require('../../../assets/images/MyProfile/man.png')}
+          source={images.google}
           style={style.imagestyle}
           resizeMode={'contain'}
         />
@@ -46,7 +48,6 @@ const ForgotPassword = ({navigation}) => {
           style={style.textInput}
           placeholderTextColor={colors.grey}
         />
-        {/* <InputField style={{width: '80%'}} /> */}
       </View>
       <View style={style.buttonViewText}>
         <DefaultButton

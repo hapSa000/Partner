@@ -117,7 +117,7 @@ const TermAndCondition = ({navigation}: any) => {
         />
         <View style={style.buttonViewText}>
           <DefaultButton
-            title={'dfbdf'}
+            title={'dfbdf h'}
             // title={textConstants.login.privicyButton}
             onPress={() => alert('hello')}
             //             onPress={() => navigation.navigate('AboutUs')}

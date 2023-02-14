@@ -28,7 +28,7 @@ const dummyArray = [
     desc: "Don't be too quick to give out personal information.",
     link: {
       name: 'Date Safely',
-      link: 'https://www.freeprivacypolicy.com/live/36c599de-caee-4b4a-80ea-74799929cd0b',
+      link: 'https://hotpot.ai/icon-resizer',
     },
   },
   {
@@ -39,7 +39,7 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const TermAndCondition = props => {
+const PrivacyPolicy = props => {
   const {navigation} = props;
   return (
     <View style={style.container}>
@@ -94,7 +94,6 @@ const TermAndCondition = props => {
                       onPress={() =>
                         navigation.navigate('WebOpen', {
                           title: item?.link?.name,
-                          URL: item?.link?.link,
                         })
                       }
                       style={{
@@ -113,8 +112,7 @@ const TermAndCondition = props => {
         <View style={style.buttonViewText}>
           <DefaultButton
             title={textConstants.login.privicyButton}
-            onPress={() => alert('hello')}
-            //             onPress={() => navigation.navigate('AboutUs')}
+            onPress={() => navigation.navigate('AboutUs')}
           />
         </View>
       </View>
@@ -122,4 +120,4 @@ const TermAndCondition = props => {
   );
 };
 
-export default TermAndCondition;
+export default PrivacyPolicy;

@@ -1,16 +1,23 @@
 import React from 'react';
 import {WebView} from 'react-native-webview';
-const WebOpen = () => {
+import DefaultHeader from './DefaultHeader';
+const WebOpen = ({navigation, route}) => {
   return (
-    <WebView
-      originWhitelist={['*']}
-      source={{
-        uri: 'https://stackoverflow.com/questions/73462928/react-native-react-native-asset-is-not-recognized',
-      }}
-      // onNavigationStateChange = {this.handleNavigationStateChange}
-      allowFileAccess={true}
-      scalesPageToFit={true}
-    />
+    <>
+      <DefaultHeader
+        onBackPress={() => navigation.goBack()}
+        title={route.params.title}
+      />
+      <WebView
+        originWhitelist={['*']}
+        source={{
+          uri: route.params.URL,
+        }}
+        // onNavigationStateChange = {this.handleNavigationStateChange}
+        allowFileAccess={true}
+        scalesPageToFit={true}
+      />
+    </>
   );
 };
 

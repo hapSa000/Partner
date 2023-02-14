@@ -56,9 +56,9 @@ export default styles = StyleSheet.create({
     marginVertical: 0,
   },
   descText: {
-    fontWeight: '500',
+    fontWeight: '400',
     color: colors.grey,
-    fontSize: 20,
+    fontSize: 17,
     textAlign: 'center',
     fontFamily: Typography.latoBold,
   },

@@ -8,8 +8,11 @@ import {
   LoginWithEmail,
   LoginWithNumber,
   TermAndCondition,
+  PrivacyPolicy,
+  AboutUs,
 } from '../screens/authScreens';
 import WebOpen from '../component/WebView';
+
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
@@ -49,7 +52,17 @@ const AppNavigator = () => {
         <Stack.Screen
           name="WebOpen"
           component={WebOpen}
-          options={{headerShown: true}}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="PrivacyPolicy"
+          component={PrivacyPolicy}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="AboutUs"
+          component={AboutUs}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>

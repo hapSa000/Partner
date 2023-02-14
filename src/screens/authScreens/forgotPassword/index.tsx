@@ -11,29 +11,29 @@ const ForgotPassword = ({navigation}) => {
     <View style={style.container}>
       <View style={style.imageView}>
         <Image
-          source={require('../../../assets/images/MyProfile/apple.png')}
+          source={require('../../../assets/images/logo-color.png')}
           style={style.imagestyle}
           resizeMode={'contain'}
         />
       </View>
-      <View style={style.imageView}>
+      {/* <View style={style.imageView}>
         <Image
           source={require('../../../assets/images/MyProfile/man.png')}
           style={style.imagestyle}
           resizeMode={'contain'}
         />
-      </View>
-      <TouchableOpacity
-        activeOpacity={0.6}
-        onPress={() => navigation.navigate('LoginWithNumber')}
-        style={style.forgotPasswordView}>
+      </View> */}
+      <View style={style.forgotPasswordView}>
         <Text style={style.forgotText}>
           {textConstants.resetPassword.heading}
         </Text>
-      </TouchableOpacity>
+      </View>
       <View style={style.description}>
         <Text style={style.descText}>
           {textConstants.resetPassword.subHeading1}
+        </Text>
+        <Text style={style.descText}>
+          {textConstants.resetPassword.subHeading2}
         </Text>
       </View>
       <View style={style.ViewTextinput}>
@@ -44,6 +44,7 @@ const ForgotPassword = ({navigation}) => {
         <TextInput
           placeholder={textConstants.formPlaceHolder.emailAddress}
           style={style.textInput}
+          placeholderTextColor={colors.grey}
         />
         {/* <InputField style={{width: '80%'}} /> */}
       </View>

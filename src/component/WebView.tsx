@@ -1,7 +1,7 @@
 import React from 'react';
-import {WebView} from 'react-native-webview';
+import { WebView } from 'react-native-webview';
 import DefaultHeader from './DefaultHeader';
-const WebOpen = ({navigation, route}) => {
+const WebOpen = ({ navigation, route }: any) => {
   return (
     <>
       <DefaultHeader

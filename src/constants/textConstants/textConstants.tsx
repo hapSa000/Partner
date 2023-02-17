@@ -37,7 +37,7 @@ export const textConstants = {
     heading: 'By clicking Log in, you agree with our',
     headingTwo: "how we process yout data in our ",
     PrivacyPolicy: "Privacy Policy",
-    text: "tinder",
+    text: "Partner",
     terms: "Terms",
     learn: " .Learn",
     and: " and",

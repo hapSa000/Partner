@@ -39,7 +39,7 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const PrivacyPolicy = props => {
+const PrivacyPolicy = (props: { navigation: any; }) => {
   const {navigation} = props;
   return (
     <View style={style.container}>
@@ -56,14 +56,15 @@ const PrivacyPolicy = props => {
         <View style={style.forgotPasswordView}>
           <BoldText
             style={style.forgotText}
-            title={textConstants.login.privicyTitle}
+            title={"gfdfdg"}
+            // title={textConstants.login.privicyTitle}
           />
         </View>
         <View style={style.forgotPasswordView}>
           <RegularText
             style={style.forgotText1}
-            title={textConstants.login.privicyDesc}
-            // title={'Please follow these House Rules.'}
+            // title={textConstants.login.privicyDesc}
+            title={'Please follow these House Rules.'}
           />
         </View>
       </View>
@@ -111,7 +112,8 @@ const PrivacyPolicy = props => {
         />
         <View style={style.buttonViewText}>
           <DefaultButton
-            title={textConstants.login.privicyButton}
+            title={"gdfgfdgd"}
+            // title={textConstants.login.privicyButton}
             onPress={() => navigation.navigate('AboutUs')}
           />
         </View>

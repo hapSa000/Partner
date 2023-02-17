@@ -40,7 +40,7 @@ const dummyArray = [
   {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const AboutUs = props => {
+const AboutUs = (props: { navigation: any; }) => {
   const {navigation} = props;
   return (
     <View style={style.container}>

@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     tinderImg: {
         width: RFValue(42),
         height: RFValue(42),
-        tintColor: colors.White,
+        // tintColor: colors.White,
     },
     tinderText: {
         color: colors.White,

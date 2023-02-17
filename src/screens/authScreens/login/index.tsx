@@ -18,7 +18,7 @@ const Login = ({ navigation }: any) => {
       <ScrollView>
         <View style={styles.mainView}>
           <Image
-            source={images.tinder}
+            source={images.logoNoBack}
             style={styles.tinderImg}
           />
           <BoldText style={styles.tinderText} title={textConstants.login.text} />

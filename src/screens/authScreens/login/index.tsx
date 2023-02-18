@@ -25,16 +25,26 @@ const Login = ({ navigation }: any) => {
         </View>
         <View style={[styles.mainView, { marginTop: screenHeigth * 0.240 }]}>
           <RegularText style={styles.byClickText} title={textConstants.login.heading} />
-          <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.terms} />
+          <BoldText onPress={() => navigation.navigate('WebOpen', {
+            title: textConstants.login.terms,
+            URL: 'https://www.freeprivacypolicy.com/live/36c599de-caee-4b4a-80ea-74799929cd0b',
+          })} style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.terms} />
           <BoldText style={styles.byClickText} title={textConstants.login.learn} />
         </View>
         <View style={styles.PrivacyPolicyMainText}>
           <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.02 }]} title={textConstants.login.headingTwo} />
-          <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.025, borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.PrivacyPolicy} />
+          <BoldText onPress={() => navigation.navigate('WebOpen', {
+            title: textConstants.login.PrivacyPolicy,
+            URL: 'https://www.freeprivacypolicy.com/live/36c599de-caee-4b4a-80ea-74799929cd0b',
+          })}
+            style={[styles.byClickText, { lineHeight: screenHeigth * 0.025, borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.PrivacyPolicy} />
           <BoldText style={[styles.byClickText, { lineHeight: screenHeigth * 0.02 }]} title={textConstants.login.and} />
         </View>
         <View style={styles.PrivacyPolicyMainText}>
-          <BoldText style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.cookies} />
+          <BoldText onPress={() => navigation.navigate('WebOpen', {
+            title: textConstants.login.cookies,
+            URL: 'https://www.freeprivacypolicy.com/live/36c599de-caee-4b4a-80ea-74799929cd0b',
+          })} style={[styles.byClickText, { borderBottomWidth: 1, borderBottomColor: colors.White, }]} title={textConstants.login.cookies} />
           <BoldText style={styles.byClickText} title={textConstants.login.dot} />
         </View>
         <View style={styles.mainSocial}>

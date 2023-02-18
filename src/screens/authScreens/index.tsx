@@ -1,4 +1,9 @@
-export {default as ForgotPassword} from '../authScreens/forgotPassword/index';
-// export {default as index} from '../authScreens/login/index';
-// export {default as index} from '../authScreens/resetPassword/index';
-// export {default as index} from '../authScreens/singup/index';
+export {default as ForgotPassword} from './forgotPassword';
+export {default as Login} from './login';
+export {default as ResetPassword} from './resetPassword';
+export {default as SignUp} from './singup';
+export {default as LoginWithEmail} from './loginWithEmail';
+export {default as LoginWithNumber} from './loginWithNumber';
+export {default as TermAndCondition} from './termsAndCondition';
+export {default as PrivacyPolicy} from './privacyPolicy';
+export {default as AboutUs} from './aboutUs';

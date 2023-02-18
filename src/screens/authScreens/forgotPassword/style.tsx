@@ -1,23 +1,26 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../../constants/colorConstsnts/colors';
+import Typography from '../../../constants/fontConstants/fonts';
 
-export default styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.White,
     alignItems: 'center',
     padding: 20,
+    justifyContent: 'center',
   },
   ViewTextinput: {
-    borderColor: colors.grey,
-    borderWidth: 1,
-    // flex: 1,
+    borderColor: colors.TwinkleBlue,
+    borderWidth: 2,
+    backgroundColor: colors.White,
     flexDirection: 'row',
     width: '80%',
     borderRadius: 30,
     paddingHorizontal: 12,
     alignItems: 'center',
     marginTop: 30,
+    elevation: 2,
   },
   buttonView: {
     borderColor: colors.grey,
@@ -43,7 +46,7 @@ export default styles = StyleSheet.create({
     marginVertical: 10,
   },
   forgotText: {
-    fontWeight: 'bold',
+    fontFamily: Typography.latoBold,
     color: 'black',
     fontSize: 25,
   },
@@ -53,9 +56,11 @@ export default styles = StyleSheet.create({
     marginVertical: 0,
   },
   descText: {
-    fontWeight: '500',
+    fontWeight: '400',
     color: colors.grey,
-    fontSize: 20,
+    fontSize: 17,
+    textAlign: 'center',
+    fontFamily: Typography.latoBold,
   },
   emailIcon: {
     width: 20,
@@ -63,7 +68,8 @@ export default styles = StyleSheet.create({
     borderRadius: 100,
   },
   textInput: {
-    marginRight: 40,
+    marginRight: 50,
+    fontSize: 20,
   },
   iconView: {
     margin: 10,
@@ -74,4 +80,9 @@ export default styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 0.5,
   },
+  buttonViewText: {
+    width: '100%',
+    marginTop: 50,
+  },
 });
+export default styles

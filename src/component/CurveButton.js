@@ -5,6 +5,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import colors from '../constants/colorConstsnts/colors';
 import {BoldText} from './CommonText';
 
 export const CurveButton = props => {
@@ -16,7 +17,7 @@ export const CurveButton = props => {
         {
           flexDirection: 'row',
           borderRadius: 30,
-          backgroundColor: '#6C5BDC',
+          backgroundColor: colors.Celeste,
           justifyContent: 'center',
           alignItems: 'center',
           paddingVertical: hp('2%'),
@@ -28,7 +29,7 @@ export const CurveButton = props => {
       {props.loading ? <ActivityIndicator size="small" color={'#FFF'} /> : null}
       {!props.loading && (
         <BoldText
-          style={{color: 'white', fontSize: hp('2%')}}
+          style={{color: 'white', fontSize: hp('2%'),letterSpacing: 0.5,}}
           title={props.title}
         />
       )}

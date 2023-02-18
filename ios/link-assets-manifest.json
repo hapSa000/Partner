@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/font/Lato-BlackItalic.ttf",
+      "sha1": "5ca4c91ab80321c04b7a113e8dd7456a2f096fe4"
+    },
+    {
+      "path": "src/assets/font/Lato-Bold.ttf",
+      "sha1": "aac3a9283deb830fb235b6a610ecb59d1b58f865"
+    },
+    {
+      "path": "src/assets/font/Lato-Light.ttf",
+      "sha1": "b94e9359d8cec2b54a6d4857e0111819d49c1028"
+    },
+    {
+      "path": "src/assets/font/Lato-Regular.ttf",
+      "sha1": "559f34487df3654288b621c29ff877af68d2e898"
+    }
+  ]
+}

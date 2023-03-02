@@ -9,13 +9,12 @@ export default StyleSheet.create({
   errorText: {
     color: 'red',
     fontSize: hp('1.5%'),
-
     paddingVertical: hp('1%'),
   },
   textInput: {
     height: 50,
     marginVertical: 10,
-    color: colors.black,
+    color: colors.Black,
     borderWidth: 0,
     borderBottomWidth: 0,
     borderColor: colors.Primary,

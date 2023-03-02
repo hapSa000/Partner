@@ -65,4 +65,24 @@ export const textConstants = {
     subHeading1: 'Enter your email address to',
     subHeading2: 'retrieve your password',
   },
+  AppIntroOne: {
+    name: "My first name is",
+    firstname: "First Name",
+    continue: "continue",
+    description: "This is how it will appear in Partner and you will not be able to change it"
+  },
+  AppIntroTwo: {
+    birthday: "My birthday is",
+    MMDDYY: "M  M  /  D  D  /  Y Y Y Y ",
+    agePublic: "Your age will be public.",
+    continue: "continue",
+  },
+  AppIntroThree: {
+    Iam: "I am a",
+    Woman: "WOMAN",
+    Man: "MAN",
+    More: "MORE",
+    continue: "continue",
+    show: "Show my gender on my profile"
+  }
 };

@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import colors from '../../../constants/colorConstsnts/colors';
 import Typography from '../../../constants/fontConstants/fonts';
 
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     marginRight: 50,
-    fontSize: 20,
+    fontSize: RFValue(12),
   },
   iconView: {
     margin: 10,

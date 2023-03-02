@@ -113,6 +113,7 @@ const PrivacyPolicy = (props: { navigation: any; }) => {
         <View style={style.buttonViewText}>
           <DefaultButton
             title={"gdfgfdgd"}
+            LinearGradientView="true"
             // title={textConstants.login.privicyButton}
             onPress={() => navigation.navigate('AboutUs')}
           />

@@ -26,6 +26,7 @@ const LoginWithEmail = ({navigation}: any) => {
       <View style={style.buttonViewText}>
         <DefaultButton
           title={"sdfsdf"}
+          LinearGradientView="true"
           // title={textConstants.login.loginWithEmail}
           onPress={() => navigation.navigate('TermAndCondition')}
         />

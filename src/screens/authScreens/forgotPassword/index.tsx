@@ -1,14 +1,14 @@
-import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import React from 'react';
 import style from './style';
-import {textConstants} from '../../../constants/textConstants/textConstants';
+import { textConstants } from '../../../constants/textConstants/textConstants';
 import InputField from '../../../component/InputField';
 import Icon from 'react-native-vector-icons/Ionicons';
 import colors from '../../../constants/colorConstsnts/colors';
 import DefaultButton from '../../../component/DefaultButton';
 import DefaultHeader from '../../../component/DefaultHeader';
 import images from '../../../constants/imageConstants/images';
-const ForgotPassword = ({navigation}: any) => {
+const ForgotPassword = ({ navigation }: any) => {
   return (
     <View style={style.container}>
       <View style={style.imageView}>
@@ -51,6 +51,7 @@ const ForgotPassword = ({navigation}: any) => {
       </View>
       <View style={style.buttonViewText}>
         <DefaultButton
+          LinearGradientView="true"
           title={textConstants.resetPassword.resetPassword}
           onPress={() => navigation.navigate('TermAndCondition')}
         />

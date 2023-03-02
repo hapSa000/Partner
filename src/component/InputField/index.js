@@ -1,11 +1,10 @@
 import * as React from 'react';
-import {View} from 'react-native';
+import { View, TextInput } from 'react-native';
 // import colors from '../../constants/colorConstants/colors';
-import {TextInput} from 'react-native-paper';
-import {ErrorText} from '../CommonText';
+import { ErrorText } from '../CommonText';
 import styles from './styles';
 
-export default props => {
+export default TextInputView = (props) => {
   let {
     refField,
     multiline,
@@ -40,7 +39,7 @@ export default props => {
         }}
         underlineColor="transparent"
         activeUnderlineColor="transparent"
-        style={[props.style, styles.textInput]}
+        style={[props.style]}
         placeholder={placeholder}
         ref={refField}
         type={'flat'}

@@ -28,6 +28,7 @@ const LoginWithNumber = ({navigation}: any) => {
       </View>
       <View style={style.buttonViewText}>
         <DefaultButton 
+        LinearGradientView="true"
         // title={textConstants.login.loginWithEmail}
         title={"gfdg"}
          />

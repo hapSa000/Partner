@@ -12,20 +12,20 @@ const LoginWithEmail = ({navigation}: any) => {
       <View style={style.forgotPasswordView}>
         <RegularText
           style={style.forgotText}
-          title={"gfdgd"}
+          title={'gfdgd'}
           // title={textConstants.login.accountRecovery}
         />
       </View>
       <View style={style.description}>
         <RegularText
           style={style.descText}
-          title={"dfgdfg"}
+          title={'dfgdfg'}
           // title={textConstants.login.accountRecoveryDesc}
         />
       </View>
       <View style={style.buttonViewText}>
         <DefaultButton
-          title={"sdfsdf"}
+          title={'sdfsdf'}
           LinearGradientView="true"
           // title={textConstants.login.loginWithEmail}
           onPress={() => navigation.navigate('TermAndCondition')}

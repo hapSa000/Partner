@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import style from './style';
-import { textConstants } from '../../../constants/textConstants/textConstants';
+import {textConstants} from '../../../constants/textConstants/textConstants';
 import DefaultButton from '../../../component/DefaultButton';
 import DefaultHeader from '../../../component/DefaultHeader';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { BoldText, RegularText } from '../../../component/CommonText';
+import {BoldText, RegularText} from '../../../component/CommonText';
 import colors from '../../../constants/colorConstsnts/colors';
 import Typography from '../../../constants/fontConstants/fonts';
 import images from '../../../constants/imageConstants/images';
@@ -37,10 +37,10 @@ const dummyArray = [
     title: 'Play it cool.',
     desc: 'Respect others and treat them as you would like to be treated.',
   },
-  { id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.' },
+  {id: '4', title: 'Be proactive.', desc: 'Always report bad behavior.'},
 ];
 
-const TermAndCondition = ({ navigation }: any) => {
+const TermAndCondition = ({navigation}: any) => {
   return (
     <View style={style.container}>
       <DefaultHeader onBackPress={() => navigation.goBack()} />
@@ -56,8 +56,8 @@ const TermAndCondition = ({ navigation }: any) => {
         <View style={style.forgotPasswordView}>
           <BoldText
             style={style.forgotText}
-            title={'gdfgdf'}
-          // title={textConstants.login.privicyTitle}
+            title={'Welcome To Tinder'}
+            // title={textConstants.login.privicyTitle}
           />
         </View>
         <View style={style.forgotPasswordView}>
@@ -68,14 +68,14 @@ const TermAndCondition = ({ navigation }: any) => {
           />
         </View>
       </View>
-      <View style={{ flex: 1, width: '100%' }}>
+      <View style={{flex: 1, width: '100%'}}>
         <FlatList
           data={dummyArray}
           keyExtractor={(item, index) => item.id}
-          renderItem={({ item }) => {
+          renderItem={({item}) => {
             return (
-              <View style={{ paddingHorizontal: 50, paddingVertical: 10 }}>
-                <View style={{ flexDirection: 'row', padding: 0 }}>
+              <View style={{paddingHorizontal: 50, paddingVertical: 10}}>
+                <View style={{flexDirection: 'row', padding: 0}}>
                   <Icon
                     name="checkmark-sharp"
                     size={30}
@@ -117,7 +117,7 @@ const TermAndCondition = ({ navigation }: any) => {
         />
         <View style={style.buttonViewText}>
           <DefaultButton
-            title={'dfbdf h'}
+            title={'I Agree'}
             LinearGradientView="true"
             // title={textConstants.login.privicyButton}
             // onPress={() => alert('hello')}

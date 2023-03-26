@@ -12,7 +12,7 @@ const AppIntroTwo = ({ navigation }: any) => {
     return (
         <View style={styles.container}>
             <DefaultHeader onBackPress={() => navigation.goBack()} />
-            <View style={styles.textView}>
+            <View style={[styles.textView, {  }]}>
                 <MediumText
                     title={textConstants.AppIntroTwo.birthday}
                     style={styles.nameStyle}
@@ -28,6 +28,20 @@ const AppIntroTwo = ({ navigation }: any) => {
                 title={textConstants.AppIntroTwo.agePublic}
                 style={[styles.mediumText, { fontSize: RFValue(12), marginTop: RFValue(5) }]}
             />
+            {/* {text != '' ?
+                <DefaultButton
+                    LinearGradientView="true"
+                    title={textConstants.AppIntroOne.continue}
+                    buttonViewStyle={[styles.buttonView, { opacity: text ? 0.99 : 0.5, }]}
+                    onPress={() => navigation.navigate('AppIntroTwo')}
+                /> :
+                <DefaultButton
+                    disabledTouch={!text}
+                    buttonStyle={{ backgroundColor: text == '' ? colors.grey : colors.Red }}
+                    title={textConstants.AppIntroOne.continue}
+                    buttonViewStyle={[styles.buttonView, { opacity: text ? 0.99 : 0.5, }]}
+                />
+            } */}
             <DefaultButton
                 // buttonStyle={{ backgroundColor: changeColor == '' ? colors.Brown : colors.Blue }}
                 title={textConstants.AppIntroOne.continue}

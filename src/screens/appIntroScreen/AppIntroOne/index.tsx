@@ -32,13 +32,20 @@ const AppIntroOne = ({ navigation }: any) => {
                 title={textConstants.AppIntroOne.description}
                 style={styles.mediumText}
             />
-            <DefaultButton
-                // LinearGradientView="true"
-                buttonStyle={{ backgroundColor: text == '' ? colors.Brown : colors.Blue }}
-                title={textConstants.AppIntroOne.continue}
-                buttonViewStyle={styles.buttonView}
-                onPress={() => navigation.navigate('AppIntroTwo')}
-            />
+            {text != '' ?
+                <DefaultButton
+                    LinearGradientView="true"
+                    title={textConstants.AppIntroOne.continue}
+                    buttonViewStyle={[styles.buttonView, { opacity: text ? 0.99 : 0.5, }]}
+                    onPress={() => navigation.navigate('AppIntroTwo')}
+                /> :
+                <DefaultButton
+                    disabledTouch={!text}
+                    buttonStyle={{ backgroundColor: text == '' ? colors.grey : colors.Red }}
+                    title={textConstants.AppIntroOne.continue}
+                    buttonViewStyle={[styles.buttonView, { opacity: text ? 0.99 : 0.5, }]}
+                />
+            }
         </View>
     );
 };

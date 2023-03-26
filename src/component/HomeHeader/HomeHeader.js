@@ -5,10 +5,10 @@ import {imageConstants} from '../../constants/imageConstants';
 import TouchableView from '../TouchableView';
 import style from './style';
 
-const HomeHeader = () => {
+const HomeHeader = (props) => {
   return (
     <View style={style.container}>
-      <BoldText style={style.headerTitleText} title={'Partner'} />
+      <BoldText style={style.headerTitleText} title={props.title} />
       <TouchableView>
         <Image
           style={style.notificationImage}

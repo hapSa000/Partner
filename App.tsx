@@ -10,12 +10,14 @@ import Settings from './src/screens/appScreens/Settings/Settings';
 // import {Profile} from './src/screens/appScreens';
 // import SafetyCenter from './src/screens/appScreens/SafetyCenter/SafetyCenter';
 // import WebView from 'react-native-webview';
+import SocialGoogle from './src/component/SocialLogin/Googlelogin';
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
       {/* <Profile /> */}
       <AppNavigator />
+      {/* <SocialGoogle /> */}
       {/* <WebView 
       source={'https://hotpot.ai/icon-resizer'}
       /> */}

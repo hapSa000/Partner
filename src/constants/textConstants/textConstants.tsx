@@ -72,6 +72,13 @@ export const textConstants = {
     description:
       'This is how it will appear in Partner and you will not be able to change it',
   },
+  AppIntroFive: {
+    school: 'My school is',
+    schoolName: 'School Name',
+    continue: 'continue',
+    description:
+      'This is how it will appear in Partner and you will not be able to change it',
+  },
   AppIntroTwo: {
     birthday: 'My birthday is',
     MMDDYY: 'M  M  /  D  D  /  Y Y Y Y ',
@@ -92,13 +99,6 @@ export const textConstants = {
     Man: 'MAN',
     Everyone: 'EVERYONE',
     continue: 'continue',
-  },
-  AppIntroFive: {
-    school: 'My school is',
-    schoolName: 'School Name',
-    continue: 'continue',
-    description:
-      'This is how it will appear in Partner and you will not be able to change it',
   },
   AppIntroSix: {
     Sexual: 'My sexual orientation is',

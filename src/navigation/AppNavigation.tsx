@@ -6,8 +6,8 @@ import {
   AppIntroOne,
   AppIntroTwo,
   AppIntroThree,
-  AppIntroFive,
   AppIntroFour,
+  AppIntroFive,
   AppIntroSix,
 } from '../screens/appIntroScreen';
 import {
@@ -98,6 +98,21 @@ const AppNavigator = () => {
           component={Home}
           options={{headerShown: false}}
         /> */}
+        <Stack.Screen
+          name="AppIntroFour"
+          component={AppIntroFour}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="AppIntroFive"
+          component={AppIntroFive}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="AppIntroSix"
+          component={AppIntroSix}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="AppIntroFour"
           component={AppIntroFour}

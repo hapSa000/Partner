@@ -106,7 +106,6 @@ const Style = StyleSheet.create({
 
   MediumText: {
     fontSize: hp('2.5%'),
-
     color: colors.Black,
   },
   LightText: {

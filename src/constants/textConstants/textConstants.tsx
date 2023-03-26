@@ -71,6 +71,12 @@ export const textConstants = {
     continue: "continue",
     description: "This is how it will appear in Partner and you will not be able to change it"
   },
+  AppIntroFive: {
+    school: "My school is",
+    schoolName: "School Name",
+    continue: "continue",
+    description: "This is how it will appear in Partner and you will not be able to change it"
+  },
   AppIntroTwo: {
     birthday: "My birthday is",
     MMDDYY: "M  M  /  D  D  /  Y Y Y Y ",
@@ -84,5 +90,24 @@ export const textConstants = {
     More: "MORE",
     continue: "continue",
     show: "Show my gender on my profile"
+  },
+  AppIntroFour: {
+    Show: "Show Me",
+    Woman: "WOMAN",
+    Man: "MAN",
+    Everyone: "EVERYONE",
+    continue: "continue",
+  },
+  AppIntroSix: {
+    Sexual: "My sexual orientation is",
+    Select: "Select up to 3",
+    straight: "Straight",
+    Gay: "Gay",
+    Lesbian: "Lesbian",
+    Bisexual: "Bisexual",
+    Asexual: "Asexual",
+    Demisexual: "Demisexual",
+    Pansexual: "Pansexual",
+    Queer: "Queer"
   }
 };

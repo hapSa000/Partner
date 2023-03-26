@@ -8,21 +8,21 @@ import TextInputView from '../../../component/InputField/index'
 import DefaultButton from '../../../component/DefaultButton';
 import colors from '../../../constants/colorConstsnts/colors';
 
-const AppIntroOne = ({ navigation }: any) => {
+const AppIntroFive = ({ navigation }: any) => {
 
     const [text, setText] = useState('')
     return (
         <View style={styles.container}>
-            <DefaultHeader onBackPress={() => navigation.goBack()} />
+            <DefaultHeader title="SKIP" endText={{ color: colors.Secondary}} style={{ justifyContent: "space-between" }} onBackPress={() => navigation.goBack()} />
             <View style={styles.textView}>
                 <MediumText
-                    title={textConstants.AppIntroOne.name}
+                    title={textConstants.AppIntroFive.school}
                     style={styles.nameStyle}
                 />
             </View>
             <View style={styles.inputStyleView}>
                 <TextInputView
-                    placeholder={textConstants.AppIntroOne.firstname}
+                    placeholder={textConstants.AppIntroFive.schoolName}
                     style={styles.inputStyle}
                     value={text}
                     onChangeText={(val) => setText(val)}
@@ -37,7 +37,7 @@ const AppIntroOne = ({ navigation }: any) => {
                     LinearGradientView="true"
                     title={textConstants.AppIntroOne.continue}
                     buttonViewStyle={[styles.buttonView, { opacity: text ? 0.99 : 0.5, }]}
-                    onPress={() => navigation.navigate('AppIntroTwo')}
+                    onPress={() => navigation.navigate('AppIntroSix')}
                 /> :
                 <DefaultButton
                     disabledTouch={!text}
@@ -49,4 +49,4 @@ const AppIntroOne = ({ navigation }: any) => {
         </View>
     );
 };
-export default AppIntroOne;
+export default AppIntroFive;

@@ -10,11 +10,11 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import images from '../constants/imageConstants/images';
 
 const DefaultButton = (props) => {
-  const { title, onPress, imgStyle, source, buttonViewStyle, image, LinearGradientView, buttonStyle, buttonTextStyle } = props
+  const { title, onPress, imgStyle, source, disabledLiner, disabledTouch, buttonViewStyle, image, LinearGradientView, buttonStyle, buttonTextStyle } = props
 
   return (
     <View>
-      {LinearGradientView ? <TouchableOpacity style={[style.container, buttonViewStyle]} onPress={onPress} >
+      {LinearGradientView ? <TouchableOpacity activeOpacity={0.6} disabled={disabledLiner}  style={[style.container, buttonViewStyle]} onPress={onPress} >
         <LinearGradient
           colors={[colors.Primary, colors.Secondary,]}
           start={{ x: 0, y: 0 }}
@@ -23,13 +23,14 @@ const DefaultButton = (props) => {
           <RegularText style={style.buttonText} title={title} />
         </LinearGradient>
 
-      </TouchableOpacity> :
-        <TouchableOpacity style={[style.container, buttonViewStyle]} onPress={onPress} >
+      </TouchableOpacity>
+        :
+        <TouchableOpacity activeOpacity={0.6} disabled={disabledTouch} style={[style.container, buttonViewStyle]} onPress={onPress} >
           <View
             style={[style.buttonView, buttonStyle]}>
             <RegularText style={[style.buttonText, buttonTextStyle]} title={title} />
             {image ?
-              <View style={{  }}>
+              <View style={{}}>
                 <Image
                   source={source}
                   style={imgStyle}

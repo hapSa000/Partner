@@ -22,16 +22,29 @@ const styles = StyleSheet.create({
         paddingLeft: RFValue(1)
     },
     mediumText: {
-        letterSpacing: 1.8,
         marginHorizontal: RFValue(55),
-        width: "90%",
-        fontSize: RFValue(15),
+        width: "68%",
+        fontSize: RFValue(12),
         // marginTop: RFValue(12),
         color: colors.grey
     },
     buttonView: {
-        marginTop: RFPercentage(48)
-    }
-
+        marginTop: RFPercentage(34),
+    },
+    img: {
+        height: RFValue(18),
+        width: RFValue(18)
+    },
+    showText: {
+        fontSize: RFValue(12),
+        marginLeft: RFValue(12),
+        color: colors.grey
+    },
+    defaultHeaderStyle: {
+        paddingVertical: RFValue(12),
+        height: RFValue(42),
+        backgroundColor: colors.White,
+    },
+  
 });
 export default styles;

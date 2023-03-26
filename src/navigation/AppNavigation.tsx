@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Splash, AppIntroOne, AppIntroTwo, AppIntroThree } from '../screens/appIntroScreen';
+import { Splash, AppIntroOne, AppIntroTwo, AppIntroThree, AppIntroFour, AppIntroFive, AppIntroSix } from '../screens/appIntroScreen';
 import {
   Login,
   ForgotPassword,
@@ -77,6 +77,21 @@ const AppNavigator = () => {
         <Stack.Screen
           name="AppIntroThree"
           component={AppIntroThree}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="AppIntroFour"
+          component={AppIntroFour}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="AppIntroFive"
+          component={AppIntroFive}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="AppIntroSix"
+          component={AppIntroSix}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

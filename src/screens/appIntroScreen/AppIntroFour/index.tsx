@@ -11,7 +11,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import images from '../../../constants/imageConstants/images';
 import { TouchableOpacity } from 'react-native';
 
-const AppIntroThree = ({ navigation }: any) => {
+const AppIntroFour = ({ navigation }: any) => {
     const selectionOnPress = (userType: any) => {
         return (
             setChangeColor(userType),
@@ -40,51 +40,35 @@ const AppIntroThree = ({ navigation }: any) => {
             <DefaultHeader onBackPress={() => navigation.goBack()} />
             <View style={styles.textView}>
                 <MediumText
-                    title={textConstants.AppIntroThree.Iam}
+                    title={textConstants.AppIntroFour.Show}
                     style={styles.nameStyle}
                 />
             </View>
             <View style={{ marginTop: RFPercentage(25), }}>
                 <DefaultButton
                     onPress={() => [selectionOnPress("WOMAN"),]}
-                    buttonStyle={{ paddingVertical: RFValue(12), height: RFValue(42), backgroundColor: colors.White, borderColor: changeColor === "WOMAN" ? colors.Red : colors.grey }}
+                    buttonStyle={[{ borderColor: changeColor === "WOMAN" ? colors.Red : colors.grey }, styles.defaultHeaderStyle]}
                     title={textConstants.AppIntroThree.Woman}
                     buttonTextStyle={{ color: colors.grey }}
                 />
                 <DefaultButton
                     onPress={() => [selectionOnPressOne("MAN")]}
-                    buttonStyle={{ paddingVertical: RFValue(12), height: RFValue(42), marginTop: RFValue(10), backgroundColor: colors.White, borderColor: changeColor === "MAN" ? colors.Red : colors.grey }}
+                    buttonStyle={[{ borderColor: changeColor === "MAN" ? colors.Red : colors.grey, marginTop: RFValue(10)}, styles.defaultHeaderStyle]}
                     title={textConstants.AppIntroThree.Man}
                     buttonTextStyle={{ color: colors.grey }}
                 />
                 <DefaultButton
-                    onPress={() => [selectionOnPressTwo("MORE"),]}
+                    onPress={() => [selectionOnPressTwo("EVERYONE"),]}
                     // buttonViewStyle={{ alignItems: null }}
-                    buttonStyle={{ paddingVertical: RFValue(12), height: RFValue(42), marginTop: RFValue(10), backgroundColor: colors.White, borderColor: changeColor === "MORE" ? colors.Red : colors.grey, flexDirection: "row", }}
-                    title={textConstants.AppIntroThree.More}
-                    buttonTextStyle={{ color: colors.grey, marginLeft: RFPercentage(16) }}
-                    image
-                    source={images.next}
-                    imgStyle={{ marginLeft: RFPercentage(14) }}
-                />
-            </View>
-            <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", marginTop: RFPercentage(28) }}>
-                <TouchableOpacity activeOpacity={0.6} onPress={() => setCheck(!check)}>
-                    <Image
-                        source={check ? images.checked : images.unChecked}
-                        resizeMode="contain"
-                        style={styles.img}
-                    />
-                </TouchableOpacity>
-                <MediumText
-                    title={textConstants.AppIntroThree.show}
-                    style={styles.showText}
+                    buttonStyle={[{flexDirection: "row", borderColor: changeColor === "EVERYONE" ? colors.Red : colors.grey,marginTop: RFValue(10)},styles.defaultHeaderStyle]}
+                    title={textConstants.AppIntroFour.Everyone}
+                    buttonTextStyle={{ color: colors.grey, }}
                 />
             </View>
             {selected ?
                 <DefaultButton
                     LinearGradientView="true"
-                    onPress={() => navigation.navigate("AppIntroFour")}
+                    onPress={() => navigation.navigate("AppIntroFive")}
                     title={textConstants.AppIntroOne.continue}
                     buttonViewStyle={[styles.buttonView, { opacity: selected ? 0.99 : 0.5, }]}
                 /> :
@@ -97,4 +81,4 @@ const AppIntroThree = ({ navigation }: any) => {
         </View>
     );
 };
-export default AppIntroThree;
+export default AppIntroFour;
